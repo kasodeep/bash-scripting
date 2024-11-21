@@ -1,0 +1,22 @@
+Option : Details
+-n: Print line numbers.
+-v: Show non-printing characters.
+-T: Show TAB characters as ^|.
+-E: Show linefeed(LF) characters as $.
+
+1. Concatenate files.
+	cat file1 file2 > file_all
+2. Printing the contents.
+	cat file.txt
+	less file.txt
+3. Pass contents of file.
+	tr A-Z a-z < file.txt
+	cat file.txt | tr A-Z a-z
+4. Write to file.
+	cat > file
+	cat >> file (Ctrl + D)
+
+grep: The command can be used to find the pattern.
+	grep foo <>
+	grep -v foo (Not present)
+	grep "*foo" <>

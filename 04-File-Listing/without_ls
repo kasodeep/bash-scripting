@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Display all the files and directories in the current directory.
+printf "%s\n" *
+
+# Display only the directories.
+printf "%s\n" */
+
+# Filter using extensions.
+printf "%s\n" *.{txt,png}
+
+# Iterate over different files.
+files=( * )
+for file in "${files[@]}"; do
+	echo "$file"
+done

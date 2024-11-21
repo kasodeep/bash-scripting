@@ -1,0 +1,21 @@
+#!/bin/bash
+# The first line is Shebang1, telling the OS to run /bin/bash hello.sh
+
+# To check the $PATH variables.
+echo $PATH | tr ':' '\n' | head -n 3
+
+# To check the Default Shell.
+echo $SHELL
+
+# The use of CLI arguments.
+printf "Hello, %s\n" "$1"
+
+# Taking user input.
+echo "Who are you?"
+read name
+echo "Hello, $name."
+
+echo "What are you doing?"
+read action
+echo "You are ${action}ing"
+

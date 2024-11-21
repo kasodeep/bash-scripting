@@ -1,0 +1,15 @@
+There are two types of Shell:
+	1. Interactive Shells: The one which directly executes the commands.
+	2. Non-Interactive Shells: Executing the bash commands through the use of .sh files.
+
+Types of Files:
+	1. bash.sh: We can specify the extension to tell the OS to provide the file to scripts.
+	2. bash: We need to move the file to a directory within our $PATH.
+
+Mistakes:
+	1. Forgetting to apply the persmission on the file, chmod +x name
+	2. Understanding that sh and bash are distinct shells.
+
+Importance of Quoting
+	1. Weak: Uses double quotes: ""
+	2. Strong: Uses single quotes: ''

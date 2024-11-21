@@ -1,0 +1,12 @@
+#!/bin/bash
+
+world="World"
+
+# Weak Quoting.
+echo "Hello $world"
+
+# Strong Quoting.
+echo 'Hello $world'
+
+# Escape String
+echo "Hello \$world"

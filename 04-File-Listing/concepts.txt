@@ -1,0 +1,21 @@
+Args : Description
+
+-a: List all entries including ones that start with dot.
+-A: List all entries excluding . and ..
+-c: Sort files by change time.
+-d: List directory entries.
+-h: Shows files in human readable format.
+-H: Same as above but using 1000 in place of 1024.
+-l: Shows content in long-listing format.
+-o: Long listing format without group info.
+-r: Shows content in reverse order.
+-s: Print size of each file in blocks.
+-S: Sort by file size.
+-t: Sort by modification time.
+-u: Sort by last access time.
+-v: Sort by version.
+-1: List one file per line.
+
+tree: The command can be used to display the files in tree like format.
+tree -L 1 -d \tmp
+# The -L command can be used to limit the depth.
