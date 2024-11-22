@@ -1,0 +1,2 @@
+File Operators: -e, -d, -f, -h
+String Comparators: -z, -n 

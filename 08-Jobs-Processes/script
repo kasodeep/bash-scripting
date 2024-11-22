@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Commands related to shell jobs.
+sleep 10 &
+fg %n
+bg %n
+kill %n
+
+# Process on specific port.
+lsof -i :8080
+
+# List the current jobs.
+jobs
+
+# Finding info about a running process.
+ps aux | grep nginx
+
+# All Processes
+ps -ef
+

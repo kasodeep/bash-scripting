@@ -1,0 +1,12 @@
+#!/bin/bash
+
+touch tempFile.txt
+ls -l > tempFile.txt
+grep ".log" < tempFile.txt
+
+# Named pipes are useful for moving information between terminals or programs.
+
+mkfifo logTransferPipe
+ls -l > logTransferPipe
+grep ".log" < logTransferPipe
+

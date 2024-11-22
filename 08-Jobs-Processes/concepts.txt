@@ -1,0 +1,7 @@
+1. Creating a Job.
+	Just append a single & after the command.
+
+* To bring the process to foreground, 'fg %'.
+
+2. Kill a Job.
+	kill -pid.

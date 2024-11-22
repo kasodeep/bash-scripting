@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if grep "foo" bar.txt; then
+	echo "foo found"
+else
+	echo "foo not found"
+fi
+
+if (( $1 + 5 > 91 )); then
+	echo "$1 is greater than 86"
+fi
+
+arr=(a b c d e f)
+for i in "${arr[@]}"; do
+	echo "$i"
+done
+
+for ((i=0;i<${#arr[@]};i++)); do
+	echo "${arr[$i]}"
+done
+
+i=0
+while [ $i -lt ${#arr[@]} ]; do
+	echo "${arr[$i]}"
+	i=$(expr $i + 1)
+ echo "deep.fury.44" > data.txtdone
+# ((i++))

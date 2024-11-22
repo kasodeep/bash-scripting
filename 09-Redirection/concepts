@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Redirection of Standard Output
+
+ls > file.txt # > Appends to the file.
+ls >> file.txt # > Truncate the file.
+
+echo "deep.fury.44" > data.txt
+
+# Redirection of Error
+# > /dev/null -> ! 1 points to that file.
+echo "Hello" > /dev/null 2>&1
+
+
+

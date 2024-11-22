@@ -1,0 +1,17 @@
+Shell aliases are a simpe way to create a new commands or to wrap something existing commands with code of your own.
+
+1. Bypassing:
+	alias ls='ls --color=auto'
+	To run this with aliasing:
+	a. command ls
+	b. /bin/ls
+	c. "ls" or 'ls'
+
+2. Create an Alias
+	alias print_name='echo "Deep " && echo "Kasodariya"'
+
+3. Remove an Alias
+	unalias {alias_name}
+
+4. List all Aliases
+	alias -p

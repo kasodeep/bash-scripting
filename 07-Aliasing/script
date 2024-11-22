@@ -1,0 +1,6 @@
+#!/bin/bash
+
+alias now='date'
+command now
+
+echo "There are ${#BASH_ALIASES[*]} aliases defined"
