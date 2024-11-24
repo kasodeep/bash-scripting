@@ -14,3 +14,7 @@
 - How to redirect the output, using pipelining.
 ### Control Structures
 - Basic syntax of different loops and flow controls.
+### Arrays
+- How to store multiple values and using maps.
+### Functions
+- How to categorize the code into blocks.

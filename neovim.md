@@ -29,6 +29,7 @@
 25. :! (To execute an external command)
 26. o, O: (For insert mode)
 27. v: (Visual Mode), y: (Copy), p: (Paste)
+28. <Space>: For everything to look out.
 
 ### Exiting Files
 1. :q! (Exit without saving)
