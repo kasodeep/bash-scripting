@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# To Uppercase.
+v="hello"
+printf '%s\n' "${v^}"
+printf '%s\n' "${v^^}"
+
+# Alternate ways.
+v="hello world"
+declare -u string="$v"
+echo "$string"
+
+# To Lowercase.
+v="BYE"
+printf '%s\n' "${v,}"
+printf '%s\n' "${v,,}"
+
+# Alternate ways.
+v="HELLO WORLD"
+declare -l string="$v"
+echo "$string"
+
+# To Togglecase.
+v="Hello World"
+echo "${v~~}"
+echo "${v~}"

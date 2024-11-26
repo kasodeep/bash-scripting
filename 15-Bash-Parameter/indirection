@@ -1,0 +1,10 @@
+#!/bin/bash
+
+red="the color red"
+green="the color green"
+
+color=red
+echo "${!color}"
+
+color=green
+echo "${!color}"

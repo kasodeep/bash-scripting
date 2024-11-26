@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# First match.
+a='I am a string'
+echo "${a/a/A}"
+
+# All matches.
+echo "${a//a/A}"
+
+# Match at the beginning.
+echo "${a/#I/y}"
+
+# Match at the end.
+echo "${a/%g/N}"
+
+# Replace a pattern with nothing.
+echo "${a/g/}"
+
+# Add prefix to array items.
+A=(hello world)
+echo "${A[@]/#h/R}"

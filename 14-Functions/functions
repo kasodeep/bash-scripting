@@ -3,6 +3,7 @@
 greet(){
 	local name="$1"
 	local val=${2: 20} # Default Args.
+	local val=${3:=30} # If null or unset, then assigned.
 	echo "Hello, $name, $val"
 }
 

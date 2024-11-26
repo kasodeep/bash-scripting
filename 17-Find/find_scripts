@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# By Name.
+find . -name "file.txt"
+find . -name "*.txt"
+
+# By Modification.
+# Have been modified less than n minutes ago.
+find . -mmin -120 
+# Have been modified more than n minutes ago.
+find . -mmin +120 
+# Have been modified less than 2 days ago.
+find . -mtime -2 
+# Options : -amin, -cimin
+
+# Find by Size.
+find -type f -size +15M
+find -type f -size -12k
+find -type f -size 12k
+find -type f -size 12288c
+find -type f -size 24b
+find -type f -size 24 # (512 bytes default)
+# find [options] -size n[cwbkMG]
+
+# To find only files containing log anywhere in their path (folder or name).
+find . -type f -path '*log*'
+# To find only files within a folder called log (on any level).
+find . -type f -path '*/log/*'
+# To find only files within a folder called log or data.
+find . -type f -path '*/log/*' -o -path '*/data/*'
+# To find all files except the ones contained in a folder called bin.
+find . -type f -not -path '*/bin/*'
+
